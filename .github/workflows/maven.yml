@@ -12,7 +12,17 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-
+    schedules:
+    - cron: 00 18 * * *
+    - cron: 00 3 * * *
+      displayName: Daily 0700 AM EDT Run
+      always: true
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v6.0.0
+      with:
+    # Artifact name
+    name: # Logs
+    path:logs/
 jobs:
   build:
 
