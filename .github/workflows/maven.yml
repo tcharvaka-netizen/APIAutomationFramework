@@ -21,8 +21,8 @@ on:
       uses: actions/upload-artifact@v6.0.0
       with:
     # Artifact name
-    name: # Logs
-    path:logs/
+    name: Logs
+       path: logs/
 jobs:
   build:
 
