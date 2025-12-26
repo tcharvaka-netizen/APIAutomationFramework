@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Test Suite">
+  <test thread-count="5" name="Booking Test">
+    <classes>
+      <class name="com.api.tests.BookingAPITestcasesUsingDataBuilder"/>
+      <class name="com.api.tests.EndTOEndBookingAPIUsingPOJO"/>
+      <class name="com.api.tests.BookingAPITestcasesUsingPOJO"/>
+      <class name="com.api.tests.CreateBookingUsingTextFile"/>
+    </classes>
+  </test> <!-- Booking Test -->
+</suite> <!-- API Test Suite -->
